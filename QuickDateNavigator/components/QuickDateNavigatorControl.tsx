@@ -117,6 +117,7 @@ export const QuickDateNavigatorControl: React.FC<IQuickDateNavigatorProps> = (pr
                         <div className="qdn-sidebar">
 
                             {/* Custom Jump Section */}
+<<<<<<< HEAD
                             <div className="qdn-custom-jump-container">
                                 <div className="qdn-sidebar-header">Jump by Days</div>
                                 <div className="qdn-jump-row">
@@ -148,6 +149,34 @@ export const QuickDateNavigatorControl: React.FC<IQuickDateNavigatorProps> = (pr
                                     >
                                         Next
                                     </button>
+=======
+                            <div className="qdn-custom-jump-section">
+                                <div className="qdn-sidebar-header">Jump by Days</div>
+                                <div style={{ padding: '0 16px 8px 16px', display: 'flex', flexDirection: 'column', gap: '8px', borderBottom: '1px solid #edebe9', marginBottom: '8px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <span style={{ fontSize: '12px' }}>Days:</span>
+                                        <input
+                                            type="number"
+                                            value={customDays}
+                                            onChange={(e) => setCustomDays(e.target.value)}
+                                            style={{ width: '50px', padding: '4px', border: '1px solid #edebe9', borderRadius: '2px' }}
+                                        />
+                                    </div>
+                                    <div style={{ display: 'flex', gap: '4px' }}>
+                                        <button
+                                            className="qdn-sidebar-action-btn"
+                                            onClick={() => handleCustomJump('prev')}
+                                        >
+                                            Previous
+                                        </button>
+                                        <button
+                                            className="qdn-sidebar-action-btn"
+                                            onClick={() => handleCustomJump('next')}
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+>>>>>>> a8582a6c2cbeafdb009330fe9bb2cb776d94c0a4
                                 </div>
                             </div>
 
